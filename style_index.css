@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", serif;
+    background-color: whitesmoke;
+}
+
+nav {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_logo_bot {
+    width: 5rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a {
+    color: black;
+}
+
+.links ul li a:hover {
+    color: darkgoldenrod;
+    transition: 0.3s;
+}
+
+.links li {
+    margin: 0 1rem 0 1rem;
+}
+
+.torcedor li a {
+    color: darkgoldenrod;
+    font-weight: 600;
+    outline: solid 2px darkgoldenrod;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.torcedor li a:hover {
+    color: black;
+}
+
+.links_4 {
+    display: flex;
+}
+
+.links_4 li {
+    margin: 0 1rem 0 1rem;
+}
+
+.trofeu {
+    width: 15rem;
+}
+
+.vencedores {
+    margin-top: 20vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.vencedores h1 {
+    font-size: 4rem;
+    width: 80rem;
+    margin: auto;
+    line-height: 4rem;
+}
+
+.vencedores p {
+    font-size: 2rem;
+    width: 40rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 4rem;
+    color: dimgrey;
+}
+
+
+.st_camisa {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    margin: 4rem auto 4rem auto;
+    justify-content: center;
+    margin-top: 40vh;
+    margin-bottom: 7.5vh;
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona sombra para destacar */
+}
+
+.ingresso {
+    width: 15rem;
+}
+
+.uniforme {
+    width: 15rem;
+}
+
+.socios h2 {
+    font-size: 1.5rem;
+    width: 30rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 4rem;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+
+
+.bonito h2 {
+    font-size: 1.5rem;
+    width: 30rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 4rem;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.bonito p {
+    font-size: 1.5rem;
+    width: 30rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 4rem;
+    color: dimgrey;
+    justify-content: center;
+}
+
+.membro a {
+    color: whitesmoke;
+    background-color: darkgoldenrod;
+    font-weight: 600;
+    outline: solid 2px darkgoldenrod;
+    padding: 0.5rem;
+    border-radius: 100px;
+}
+
+.membro a:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+.uma a {
+    color: whitesmoke;
+    background-color: darkgoldenrod;
+    font-weight: 600;
+    outline: solid 2px darkgoldenrod;
+    padding: 0.5rem;
+    border-radius: 100px;
+}
+
+.uma a:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+footer nav ul {
+    margin: auto;
+    display: flex;
+    gap: 1.5rem; 
+    justify-content: center; 
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem; 
+    padding: 0.5rem; 
+}
+
+footer nav ul li a:hover {
+    color: darkgoldenrod;
+    transition: color 0.3s ease;
+}
+
+@media screen and (min-width: 1024px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .torcedor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .links_4 {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: fit-content;
+        margin: 6rem auto auto auto;
+        width: fit-content;
+    }
+}
+
+#burguer {
+    font-size: 2rem;
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 768px) {
+
+    .vencedores h1 {
+        font-size: 1.5rem;
+        width: 90%;
+        line-height: 2.2rem;
+        word-spacing: 0.2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .vencedores p {
+        font-size: 1rem;
+        width: 90%;
+        padding: 1rem;
+        line-height: 1.6rem;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+
+    .st_camisa {
+        flex-direction: column; 
+        gap: 2rem; 
+        padding: 1rem; 
+    }
+    .st_camisa h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .st_camisa p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: justify;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .st_camisa img {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+    .st_camisa a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem; 
+        display: block; 
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    footer nav ul {
+        flex-direction: column; 
+        gap: 1rem; 
+        padding: 1rem; 
+    }
+    footer nav ul li a {
+        font-size: 1rem; 
+        padding: 0.5rem; 
+        text-align: center; 
+        width: 100%;
+    }
+}
